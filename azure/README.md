@@ -1,14 +1,17 @@
 # Azure Infrastructure-as-Code files.
 
-This folder contains scripts and templates for creating Azure resources.
+This folder contains Infrastructure-as-Code (IaC) scripts and templates to create Azure resources.
 
 ## Files
 
-| Filename | Description |
-|----------|-------------|
-| resource_group | Resource Group files. |
+Folder | Description
+------ | ----------- 
+resource_group | Create a Resource Group.
 
-## Deployment
+## Instructions
 
-1. Edit the script_variables.ps1 to change values such as the prefix for resource names and the location (region).
-2. Run the resource_group\resource_group.ps1 script.
+1. Edit script_variables.ps1 and change the following
+    - location and locationName to the desired Azure region.
+    - resourceNamePrefix as a preface for all resource names.
+    - resourceNameRawPrefix as a preface for all resource names that only allow alphanumeric characters, such as Storage Accounts.
+2. Run resource_group\resource_group.ps1 to create the Resource Group.

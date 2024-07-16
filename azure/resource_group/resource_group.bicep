@@ -23,7 +23,7 @@ param name string
 param location string
 
 // Create a Resource Group.
-resource resourceGroup 'Microsoft.Resources/resourceGroups@2023-07-01' = {
+resource resourceGroup 'Microsoft.Resources/resourceGroups@2024-03-01' = {
   name: name
   location: location
 }
